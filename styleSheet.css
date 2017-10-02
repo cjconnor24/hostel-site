@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
+@charset "utf-8";
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+html {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+}
+
+
+#page {
+	margin:0 auto;
+	position: relative;
+}
+.wrapper {
+	max-width:1170px;
+	margin:0 auto;
+}
+
+/* HEADER */
+header {
+	background:url(images/banners/banner_black.jpg) no-repeat center center #000;
+	min-height: 126px;
+	line-height:126px;
+
+}
+header h1 {
+	margin:0px 0px 0px 50px;
+	color:#FFF;
+	text-shadow: 2px 2px 4px #333;
+}
+
+/* NAVIGATION */
+nav .branding {
+	float:left;
+}
+nav menu {
+	float:right;
+}
+.logo {
+	background:url(images/logo-white.svg) no-repeat center center;
+	display:block;
+	background-size:auto 60px;
+	width:300px;
+	height:auto;
+	min-height:80px;
+}
+.logo span {
+	display:none;
+}
+nav::after {
+	content: '';
+	clear:both;
+}
+nav {
+	text-transform: uppercase;
+	color:#FFF;
+	text-align: center;
+	background: #242323;
+	font-family:Nunito,sans-serif;
+	font-size:0.9em;
+	letter-spacing: .1em;
+	height:80px;
+	line-height:80px;
+}
+
+nav ul li {
+	display:inline;
+
+}
+nav ul li a {
+	color:#FFF;
+	text-decoration:none;
+	padding:0 1em;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+nav ul li a:hover {
+	color:#999;
+}
+nav ul li a.contact {
+	border:1px solid #FFF;
+	padding:.5em .8em;
+}
+nav ul li a.contact:hover {
+	background:rgba(255,255,255,0.1);
+	color:#FFF;
+}
+/* CONTENT */
+#content {
+	padding:20px 0;
+}
+#content p {
+	margin:0 0 10px 0;
+}
+/* RE-USABLE CLASSES */
+.center-text {
+	text-align:center;
+}
+.left {
+	float:left;
+}
+
+/* FOOTER */
+footer {
+	color:#fff;
+	background: #242323;
+	padding:2em 0;
+	font-family:Nunito,sans-serif;
+}
+
+footer ul {
+	float:right;
+}
+footer ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+footer ul li {
+	display:inline;
+}
+footer ul li a {
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#CCC;
+	font-size:0.8em;
+	padding:0 1em 0 2em;
+	transition:color 0.2s;
+}
+footer ul li a:hover {
+	color:#FFF;
+}
