@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
+/*@import url('/css/util.css')*/
 @charset "utf-8";
 * {
 	box-sizing: border-box;
@@ -27,7 +28,7 @@ body {
 
 /* HEADER */
 header {
-	background:url(images/banners/banner_black.jpg) no-repeat center center #000;
+	background:url(/images/banners/banner_black.jpg) no-repeat center center #000;
 	min-height: 126px;
 	line-height:126px;
 
@@ -42,11 +43,12 @@ header h1 {
 nav .branding {
 	float:left;
 }
-nav menu {
+nav .menu {
 	float:right;
+	padding:0 1em 0 0;
 }
-.logo {
-	background:url(images/logo-white.svg) no-repeat center center;
+nav .logo {
+	background:url(/images/logo-white.svg) no-repeat center center;
 	display:block;
 	background-size:auto 60px;
 	width:300px;
@@ -92,9 +94,11 @@ nav ul li a:hover {
 nav ul li a.contact {
 	border:1px solid #FFF;
 	padding:.5em .8em;
+	background:rgba(100,0,0,0);
+	transition:background-color 0.3s ease;
 }
 nav ul li a.contact:hover {
-	background:rgba(255,255,255,0.1);
+	background:#999;
 	color:#FFF;
 }
 /* CONTENT */
@@ -119,26 +123,54 @@ footer {
 	padding:2em 0;
 	font-family:Nunito,sans-serif;
 }
-
-footer ul {
-	float:right;
+footer .logo {
+	width:200px;
 }
-footer ul {
+footer .address-block {
+	float:left;
+	width:25%;
+}
+footer .address-block p {
+	margin:1em 0 1em 0;
+}
+footer .address-block a {
+	text-decoration: none;
+	color:#999;
+}
+
+footer .menu-block {
+	text-align:right;
+	float:right;
+	width:75%;
+}
+footer .menu-block ul {
 	list-style:none;
 	margin:0;
 	padding:0;
 }
-footer ul li {
+footer .menu-block ul li {
 	display:inline;
 }
-footer ul li a {
+footer .menu-block ul li a {
 	text-decoration:none;
 	text-transform: uppercase;
-	color:#CCC;
+	color:#FFF;
+	padding:0 0 0 2em;
+	transition:color 0.5s;
 	font-size:0.8em;
-	padding:0 1em 0 2em;
-	transition:color 0.2s;
 }
-footer ul li a:hover {
+footer .menu-block ul li a:hover {
+	color:#999;
+}
+footer p.copyright::before {
+	content:'';
+	display:block;
+	clear:both;
+
+}
+footer p.copyright {
+	text-align:center;
+	padding:2em 0 1em 0;
+	font-size:.7em;
 	color:#FFF;
 }
