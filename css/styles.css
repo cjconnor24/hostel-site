@@ -174,3 +174,8 @@ footer p.copyright {
 	font-size:.7em;
 	color:#FFF;
 }
+@media screen and (max-width:1170px){
+	footer {
+		padding:3em;
+	}
+}
