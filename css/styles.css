@@ -31,7 +31,6 @@ header {
 	background:url(/images/banners/banner_black.jpg) no-repeat center center #000;
 	min-height: 126px;
 	line-height:126px;
-
 }
 header h1 {
 	margin:0px 0px 0px 50px;
@@ -91,6 +90,9 @@ nav ul li a {
 nav ul li a:hover {
 	color:#999;
 }
+nav ul li:last-child {
+	display:none;
+}
 nav ul li a.contact {
 	border:1px solid #FFF;
 	padding:.5em .8em;
@@ -129,6 +131,11 @@ footer .logo {
 footer .address-block {
 	float:left;
 	width:25%;
+}
+footer .address-block address {
+	font-family:Helvetica,Arial,sans-serif;
+	font-style: normal;
+	font-size:0.9em;
 }
 footer .address-block p {
 	margin:1em 0 1em 0;
@@ -174,8 +181,46 @@ footer p.copyright {
 	font-size:.7em;
 	color:#FFF;
 }
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width:1170px){
 	footer {
 		padding:3em;
 	}
+}
+
+@media screen and (max-width:1024px){
+	nav {
+		font-size:0.8em;
+	}
+	nav li a {
+		padding:0 0.5em!important;
+	}
+	nav a.logo {
+		width:200px;
+		background-size:150px!important;
+		background-position:center center!important;
+	}
+}
+
+@media screen and (max-width:420px){
+
+	nav ul li:not(:first-child) {
+		display:none;
+	}
+	nav ul li:last-child {
+		display:inline-block;
+		height:80px;
+		width:80px;
+	}
+	nav .logo {
+		float:none!important;
+	}
+	nav::after {
+		content:'';
+		display:block;
+	}
+
+
 }
