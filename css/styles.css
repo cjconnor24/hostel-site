@@ -16,7 +16,6 @@ body {
 	font-size:16px;
 }
 
-
 #page {
 	margin:0 auto;
 	position: relative;
@@ -49,17 +48,13 @@ nav .menu {
 nav .logo {
 	background:url(/images/logo-white.svg) no-repeat center center;
 	display:block;
-	background-size:auto 60px;
+	background-size:auto;
 	width:300px;
-	height:auto;
-	min-height:80px;
+	height:80px;
+
 }
 .logo span {
 	display:none;
-}
-nav::after {
-	content: '';
-	clear:both;
 }
 nav {
 	text-transform: uppercase;
@@ -69,12 +64,18 @@ nav {
 	font-family:Nunito,sans-serif;
 	font-size:0.9em;
 	letter-spacing: .1em;
-	height:80px;
+	min-height:80px;
 	line-height:80px;
 }
+nav::after {
+	content: '';
+	clear:both;
+	display:block;
+}
+
 
 nav ul li {
-	display:inline;
+	display:inline-block;
 
 }
 nav ul li a {
@@ -90,7 +91,8 @@ nav ul li a {
 nav ul li a:hover {
 	color:#999;
 }
-nav ul li:last-child {
+nav ul li:last-child,
+nav ul li:nth-child(7){
 	display:none;
 }
 nav ul li a.contact {
@@ -195,7 +197,7 @@ footer p.copyright {
 		font-size:0.8em;
 	}
 	nav li a {
-		padding:0 0.5em!important;
+		padding:0 0.5em;
 	}
 	nav a.logo {
 		width:200px;
@@ -204,22 +206,55 @@ footer p.copyright {
 	}
 }
 
-@media screen and (max-width:420px){
+/* REPONSIVE NAVIGATION COLLAPSE */
+@media screen and (max-width:840px){
 
-	nav ul li:not(:first-child) {
-		display:none;
-	}
-	nav ul li:last-child {
-		display:inline-block;
+	nav .menu ul li:last-child,
+	nav .menu ul li:nth-child(7)
+	{
+		display:block;
+		position:absolute;
 		height:80px;
 		width:80px;
+		line-height:80px;
+		font-size:1.5em;
+		top:0;
 	}
-	nav .logo {
-		float:none!important;
+
+	nav .menu ul li:not(:nth-child(n + 7)) {
+		display: none;
+
+
 	}
-	nav::after {
-		content:'';
+	nav.responsive .menu ul li {
 		display:block;
+	}
+	
+	nav .menu ul li.telephone-icon {
+		left:0;
+	}
+	nav .menu ul li.menu-icon {
+		right:0;
+	}
+
+	nav .branding {
+		width:100%;
+	}
+	nav .branding a.logo {
+		width:100%;
+		background-position:center center!important;
+	}
+	nav .branding, nav .menu {
+		float:none;
+	}
+	nav .menu {
+		background:#121212;
+		/*padding:1em 0 0 0;*/
+	}
+	nav ul li {
+		display:block;
+		line-height: normal;
+		padding:0 0 1em 0;
 	}
 
 
