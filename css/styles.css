@@ -24,6 +24,9 @@ body {
 	max-width:1170px;
 	margin:0 auto;
 }
+#content .wrapper {
+	padding:0 2em
+}
 
 /* HEADER */
 header {
@@ -206,6 +209,33 @@ footer p.copyright {
 	}
 }
 
+/* RESPONSIVE FOOTER NAVIGATION */
+@media screen and (max-width:890px){
+	footer .menu-block ul li {
+		display:block;
+		padding:0.5em 0;
+	}
+	footer .menu-block {
+		width:50%;
+	}
+	footer .address-block {
+		width:50%;
+	}
+}
+
+@media screen and (max-width:590px){
+	footer .menu-block,
+	footer .address-block {
+		float:none;
+		width:100%;
+		text-align: center;
+	}
+	footer .menu-block ul li {
+		padding:0;
+		dipslay:inline-block!important;
+	}
+}
+
 /* REPONSIVE NAVIGATION COLLAPSE */
 @media screen and (max-width:840px){
 
@@ -223,13 +253,11 @@ footer p.copyright {
 
 	nav .menu ul li:not(:nth-child(n + 7)) {
 		display: none;
-
-
 	}
 	nav.responsive .menu ul li {
 		display:block;
 	}
-	
+
 	nav .menu ul li.telephone-icon {
 		left:0;
 	}
