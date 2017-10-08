@@ -1,7 +1,7 @@
 
 <?php include('includes/header.php');?>
 
-    <section class="hero outside">
+    <section class="hero view">
         <div class="background">
         <h1>WELCOME to the Backpacker Hostel</h1>
         <p>This is a sub-heading for more hero information</p>
@@ -24,31 +24,25 @@
 
             <!--</div>-->
 
-            <div class="gallery">
 
-                <img src="/images/food/bakedpotato.jpg" alt="Baked Potato" />
-                <img src="/images/food/cake1.jpg" alt="Cake" />
-                <img src="/images/food/hotchocolate.jpg" alt="Hot Chocolate" />
-                <img src="/images/food/lasagna.jpg" alt="Lasagne" />
-                <img src="/images/food/tea.jpg" alt="Tea" />
-                <img src="/images/food/breakfast.jpg" alt="Breakfast" />
-                <img src="/images/food/cake2.jpg" alt="Cake" />
-                <img src="/images/food/icecream.jpg" alt="Ice Cream" />
-                <!--<img src="/images/food/pizza.jpg" alt="" />-->
-
-            </div>
-
+            <div class="clear">
             <h1>Welcome to BACKPACKER Hostels</h1>
+
+
+            <p><img src="/images/hostel/outside.jpg" alt="Hostel Exterior" class="right shadow" ></p>
 
             <p>The Hostel has one of the best locations in Scotland. From the attractive loch-side garden, the views across to mountain range are breathtaking. Good facilities mean the hostel is popular with walkers and tourist alike.</p>
             <p>There are otters, badgers and pine martins in the area. Red deer are numerous, and on the mountains ravens, ptarmigan, golden eagles and mountain hares can be seen on occasion</p>
             <p>... well situated for walking and exploring some of Scotland's most celebrated scenery"!</p>
             <p>With no mobile phone reception the emphasis here is on tranquillity and relaxation! </p>
 
+            </div>
+
             <h2>Room Rates</h2>
 
-
+            <p>Below are our current room rates for this season.</p>
             <div class="prices">
+
 
                 <div class="price-col">
 
@@ -90,6 +84,10 @@
                 </div>
 
             </div>
+
+            <h2>Gallery Example</h2>
+            <p>Below is a text image gallery for testing.</p>
+            <?php include('gallery.php'); ?>
 
             <h1>HTML Ipsum Presents</h1>
 
