@@ -11,11 +11,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
     <script type="text/javascript">
+        /**
+         * SHOW AND HIDE THE NAV MENU
+         */
         function toggleNav() {
             var navbar = document.getElementsByTagName("nav")[0];
             if (navbar.className === "") {
@@ -43,7 +43,7 @@
             <div class="menu">
 
                 <ul>
-                    <li><a href="#">Home Page</a></li>
+                    <li class="home"><a href="#">Home Page</a></li>
                     <li><a href="facilities.html">Facilities</a> </li>
                     <li><a href="#">Prices</a></li>
                     <li><a href="#">Cafe</a></li>
@@ -60,21 +60,35 @@
     </nav>
 
 
-    <!--<header>-->
-    <!--<h1> Backpacker's Hostel</h1>-->
-    <!--&lt;!&ndash;<img src="images/banners/banner_black.jpg"/>&ndash;&gt;-->
-    <!--</header>-->
+    <header>
+    <h1> Backpacker's Hostel</h1>
+    <!--<img src="images/banners/banner_black.jpg"/>-->
+    </header>
+
+
+
+    <section class="hero">
+
+
+
+    </section>
 
     <section id="content">
 
         <div class="wrapper">
 
-            <!-- <img src="images/hostel/outside.jpg" alt="Outside">
+            <div class="row">
 
-            <p> The Hostel has one of the best locations in Scotland. From the attractive loch-side garden, the views across to mountain range are breathtaking. Good facilities mean the hostel is popular with walkers and tourist alike.</p>
-            <p>There are otters, badgers and pine martins in the area. Red deer are numerous, and on the mountains ravens, ptarmigan, golden eagles and mountain hares can be seen on occasion</p>
-            <p>... well situated for walking and exploring some of Scotland's most celebrated scenery"!</p>
-            <p>With no mobile phone reception the emphasis here is on tranquillity and relaxation! </p> -->
+                <div class="col-4"><h2>TEST</h2>
+                <p>Here is some body text</p></div>
+
+                <div class="col-8"><h2>COLUMN TWO</h2>
+                <p>THIS IS ANOTHER COLOUMN</p>
+                </div>
+
+            </div>
+
+            <!--<h1>Welcome to BACKPACKER Hostels</h1>-->
 
             <h1>HTML Ipsum Presents</h1>
 
@@ -107,8 +121,6 @@ height: 80px;
         </div>
 
     </section>
-
-
 
     <footer>
 

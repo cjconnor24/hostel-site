@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
-/*@import url('/css/util.css')*/
+@import url('/css/util.css');
 @charset "utf-8";
+
+/*
+CHRIS CONNOR
+chris@chrisconnor.co.uk
+Hostel Website - Uni Coursework
+*/
+
 * {
 	box-sizing: border-box;
 	margin:0;
@@ -238,7 +245,29 @@ footer p.copyright {
 
 /* REPONSIVE NAVIGATION COLLAPSE */
 @media screen and (max-width:840px){
-
+	nav {
+		position: fixed;
+		left:0px;
+		top:0px;
+		z-index: 1;
+		width:100%;
+		height:80px;
+	}
+	#page {
+		padding:80px 0 0 0;
+	}
+	nav ul li.home {
+		padding:1em 0!important;
+	}
+	nav ul li a.contact {
+		border:none;
+		/*padding:.5em .8em;*/
+		/*background:rgba(100,0,0,0);*/
+		/*transition:background-color 0.3s ease;*/
+	}
+	nav ul li a.contact:hover {
+		background:none;
+	}
 	nav .menu ul li:last-child,
 	nav .menu ul li:nth-child(7)
 	{
