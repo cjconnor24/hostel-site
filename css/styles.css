@@ -55,7 +55,8 @@ header h1 {
 	background-size: 100%;
 	font-size:1.3em;
 	color:#FFF;
-	box-shadow:0px 0px 30px #999;
+	box-shadow:0px 0px 20px rgb(32,32,32);
+	transition: 1s;
 }
 
 .hero .background {
@@ -80,7 +81,10 @@ header h1 {
 	transition: 0.5s;
 }
 .hero a.btn:hover {
-	background:rgba(50,50,50,1);
+	background:rgba(153,153,153,0.5);
+	padding:0.6em 1.5em;
+
+
 }
 /* NAVIGATION */
 nav .branding {
@@ -132,7 +136,7 @@ nav ul li a {
 	-moz-transition: color 0.2s;
 	-ms-transition: color 0.2s;
 	-o-transition: color 0.2s;
-	transition: color 0.2s;
+	transition: color 0.5s;
 }
 nav ul li a:hover {
 	color:#999;
@@ -277,6 +281,12 @@ footer p.copyright {
 		padding:0;
 		dipslay:inline-block!important;
 	}
+
+	/* HERO */
+	.hero {
+		background-size:auto 100%;
+		font-size:1.1em;
+	}
 }
 
 /* REPONSIVE NAVIGATION COLLAPSE */
@@ -297,9 +307,6 @@ footer p.copyright {
 	}
 	nav ul li a.contact {
 		border:none;
-		/*padding:.5em .8em;*/
-		/*background:rgba(100,0,0,0);*/
-		/*transition:background-color 0.3s ease;*/
 	}
 	nav ul li a.contact:hover {
 		background:none;
