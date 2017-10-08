@@ -1,103 +1,12 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Hostel | Homepage</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<?php include('includes/header.php');?>
 
-    <!-- FAVICONS -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-    <script type="text/javascript">
-        /**
-         * SHOW AND HIDE THE NAV MENU
-         */
-        setTimeout(changeHeroImage, 5000);
-
-        /**
-         * CRUDE FUNTION TO CHANGE HERO HEADER IMAGE
-         */
-        function changeHeroImage(){
-            console.log('THIS RAN');
-            var heroBox = document.getElementsByClassName('hero')[0];
-            var imagePath = "/images/hostel/";
-            var heroImages=["bathroom.jpg",
-                "cafe.jpg",
-                "commonroom.jpg",
-                "cooking.jpg",
-                "dormitory.jpg",
-                "doubleroom1.jpg",
-                "doubleroon2.jpg",
-                "outside.jpg",
-                "singleroom.jpg",
-                "washing.jpg"];
-//            heroBox.backgroundImage = imagePath + heroImages[1];
-            console.log(imagePath + heroImages[5]);
-            heroBox.style.backgroundImage = 'url('+imagePath + heroImages[5]+')';
-        }
-
-        function toggleNav() {
-            var navbar = document.getElementsByTagName("nav")[0];
-            if (navbar.className === "") {
-                navbar.className += " responsive";
-            } else {
-                navbar.className = "";
-            }
-        }
-    </script>
-
-</head>
-
-<body>
-
-<div id="page">
-
-    <nav>
-
-        <div class="wrapper">
-
-            <div class="branding">
-                <a href="#" class="logo" title="Backpacker Hostel"><span>Backpacker Hostel</span></a>
-            </div>
-
-            <div class="menu">
-
-                <ul>
-                    <li class="home"><a href="#">Home Page</a></li>
-                    <li><a href="facilities.html">Facilities</a> </li>
-                    <li><a href="#">Prices</a></li>
-                    <li><a href="#">Cafe</a></li>
-                    <li><a href="#">Getting Here</a></li>
-                    <li><a href="#" class="contact">Contact Us</a></li>
-                    <li class="menu-icon"><a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a></li>
-                    <li class="telephone-icon"><a href="tel:+4412361234567"><i class="fa fa-phone"></i></a></li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </nav>
-
-
-    <!--<header>-->
-    <!--<h1> Backpacker's Hostel</h1>-->
-    <!--&lt;!&ndash;<img src="images/banners/banner_black.jpg"/>&ndash;&gt;-->
-    <!--</header>-->
-
-
-
-    <section class="hero">
+    <section class="hero outside">
         <div class="background">
         <h1>WELCOME to the Backpacker Hostel</h1>
         <p>This is a sub-heading for more hero information</p>
         <p><a href="#" class="btn">Find out more</a></p>
         </div>
-
     </section>
 
     <section id="content">
@@ -114,6 +23,20 @@
                 <!--</div>-->
 
             <!--</div>-->
+
+            <div class="gallery">
+
+                <img src="/images/food/bakedpotato.jpg" alt="Baked Potato" />
+                <img src="/images/food/cake1.jpg" alt="Cake" />
+                <img src="/images/food/hotchocolate.jpg" alt="Hot Chocolate" />
+                <img src="/images/food/lasagna.jpg" alt="Lasagne" />
+                <img src="/images/food/tea.jpg" alt="Tea" />
+                <img src="/images/food/breakfast.jpg" alt="Breakfast" />
+                <img src="/images/food/cake2.jpg" alt="Cake" />
+                <img src="/images/food/icecream.jpg" alt="Ice Cream" />
+                <!--<img src="/images/food/pizza.jpg" alt="" />-->
+
+            </div>
 
             <h1>Welcome to BACKPACKER Hostels</h1>
 
@@ -200,44 +123,5 @@ height: 80px;
 
     </section>
 
-    <footer>
+<?php include('includes/footer.php');?>
 
-        <div class="wrapper">
-
-            <div class="address-block">
-
-                <img src="/images/logo-white.svg" class="logo" alt="Backpacker Hostel Logo" >
-
-                <address>
-                    123 Testing Street<br>
-                    Hostel Street<br>
-                    Town<br>
-                    G12 9PO
-                </address>
-
-                <p><i class="fa fa-envelope"></i> <a href="#">hello@thehostel.co.uk</a><br>
-                    <i class="fa fa-phone"></i> +44 (0) 123 123 1234
-                </p>
-
-            </div>
-
-            <div class="menu-block">
-
-                <ul>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cancellation Policy</a></li>
-                </ul>
-
-            </div>
-
-            <p class="copyright">&copy; All design and content belongs to Backpacker Hostel 2017</p>
-
-    </footer>
-
-</div>
-
-</div>
-
-</body>
-</html>

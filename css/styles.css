@@ -46,7 +46,21 @@ ul, ol {
 p, blockquote, blockquote p {
 	margin:0 0 1em 0;
 }
-
+/* GALLERY */
+.gallery::after {
+	content: '';
+	display:block;
+	clear:both;
+}
+.gallery {
+	margin:0 0 1em 0;
+}
+.gallery img {
+	width:24%;
+	margin:0;
+	padding:0;
+	border:none;
+}
 
 /* HEADER */
 header {
@@ -61,9 +75,12 @@ header h1 {
 }
 
 /* HERO */
+.outside { background: url(/images/hostel/outside.jpg); }
+.cake  { background: url(/images/food/cake1.jpg); }
 .hero {
 	text-align: center;
-	background: url(/images/hostel/outside.jpg) no-repeat center center;
+	background-position: center center;
+	background-repeat: no-repeat;
 	font-family:Nunito, sans-serif;
 	background-size: 100%;
 	font-size:1.3em;
