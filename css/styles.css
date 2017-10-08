@@ -34,7 +34,9 @@ body {
 #content .wrapper {
 	padding:0 2em
 }
-
+h1 {font-size:1.8em;}
+h2 {font-size:1.6em;}
+h3 {font-size:1.4em;}
 h1,h2,h3,h4,h5 {
 	font-family:Nunito, sans-serif;
 	margin:0 0 0.8em 0;
@@ -55,12 +57,20 @@ p, blockquote, blockquote p {
 .gallery {
 	margin:0 0 1em 0;
 }
-.gallery img {
-	width:24%;
-	margin:0;
+.gallery div {
+	margin:0 2% 1% 0;
 	padding:0;
-	border:none;
+	float:left;
+	width:23%;
+	height:auto;
+	overflow: hidden;
+	transition: 0.25s;
 }
+
+.gallery div img {
+	width:100%;
+}
+
 
 /* HEADER */
 header {
@@ -74,16 +84,42 @@ header h1 {
 	text-shadow: 2px 2px 4px #333;
 }
 
+.band {
+	background:#eee;
+}
+
+/* IMAGE CLASSES*/
+.shadow {
+	box-shadow:1px 1px 10px #CCC;
+}
+.half {width:50%;}
+.quarter {width:25%;}
+
+img.left {
+	float:left;
+	margin:0 1em 1em 0;
+}
+img.right {
+	float:right;
+	margin:0 0 1em 1em;
+}
+.clear::after {
+	content: '';
+	display:block;
+	clear:both;
+}
+
 /* HERO */
 .outside { background: url(/images/hostel/outside.jpg); }
 .cake  { background: url(/images/food/cake1.jpg); }
+.view {background:url(/images/views/view14.jpg);}
 .hero {
 	text-align: center;
 	background-position: center center;
 	background-repeat: no-repeat;
 	font-family:Nunito, sans-serif;
 	background-size: 100%;
-	font-size:1.3em;
+	font-size:1.1em;
 	color:#FFF;
 	box-shadow:0px 0px 20px rgb(32,32,32);
 	transition: 1s;
@@ -101,7 +137,7 @@ header h1 {
 }
 .hero a.btn {
 	text-decoration: none;
-	padding:0.6em 1em;
+	padding:0.8em 1.2em;
 	color:#FFF;
 	border:1px solid #FFF;
 	background:rgba(32,32,32,0.5);
@@ -355,6 +391,11 @@ footer p.copyright {
 	footer .address-block {
 		width:50%;
 	}
+
+	/*GALLERY COLLAPSE*/
+	.gallery div {
+		width:31%;
+	}
 }
 
 /*PRICING TABLES COLLAPSE*/
@@ -367,6 +408,18 @@ footer p.copyright {
 	}
 	.prices div:nth-child(2){
 		margin:1em 0 2em 0;
+	}
+
+	img.left, img.right {
+		float:none;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+
+	/*GALLERY COLLAPSE*/
+	.gallery div {
+		width:48%;
 	}
 }
 
