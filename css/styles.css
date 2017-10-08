@@ -155,6 +155,63 @@ nav ul li a.contact:hover {
 	background:#999;
 	color:#FFF;
 }
+
+/* Pricing Table */
+.prices::after {
+	content: '';
+	display:block;
+	clear:both;
+}
+.prices {
+	margin:1em 0;
+}
+.prices div:nth-child(2){
+	margin:0 2%;
+}
+.price-col {
+	width:32%;
+	display:block;
+	float:left;
+	/*border:1px solid rgb(32,32,32);*/
+}
+.price-col ul {
+	list-style:none;
+	text-align:center;
+	font-size:1.1em;
+}
+.price-col ul li {
+	padding:1em 0;
+}
+.price-col ul li.price,
+.price-col ul li.footer {
+	background:#eee;
+}
+.highlight {
+	background: #00992b !important;
+}
+.price-col ul li.header {
+	background:rgb(32,32,32);
+	color:#FFF;
+	font-family:Nunito, sans-serif;
+	font-size:1.3em;
+	text-transform: uppercase;
+}
+.price-col ul li.footer a {
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:0.8em;
+	font-family:Nunito, sans-serif;
+	background:rgb(32,32,32);
+	padding:0.5em 1em;
+	color:#FFF;
+	box-shadow:0px 0px 5px #333;
+	transition: 0.25s;
+}
+.price-col ul li.footer a:hover {
+	background:#999;
+	/*color:rgb(32,32,32);*/
+}
+
 /* CONTENT */
 #content {
 	padding:20px 0;
@@ -267,6 +324,19 @@ footer p.copyright {
 	}
 	footer .address-block {
 		width:50%;
+	}
+}
+
+/*PRICING TABLES COLLAPSE*/
+@media screen and (max-width: 670px) {
+	.price-col {
+		float:none;
+		display:block;
+		width:100%;
+		font-size:0.8em;
+	}
+	.prices div:nth-child(2){
+		margin:1em 0 2em 0;
 	}
 }
 
