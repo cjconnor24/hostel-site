@@ -35,6 +35,19 @@ body {
 	padding:0 2em
 }
 
+h1,h2,h3,h4,h5 {
+	font-family:Nunito, sans-serif;
+	margin:0 0 0.8em 0;
+}
+ul, ol {
+	/*margin:0 1em;*/
+	/*padding:0 1em;*/
+}
+p, blockquote, blockquote p {
+	margin:0 0 1em 0;
+}
+
+
 /* HEADER */
 header {
 	background:url(/images/banners/banner_black.jpg) no-repeat center center #000;
