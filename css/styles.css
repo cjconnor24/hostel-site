@@ -115,6 +115,7 @@ img.right {
 	margin:0 0 1em 0;
 }
 .contact-form input[type=text],
+.contact-form input[type=email],
 .contact-form textarea {
 	padding:1em;
 	border-radius:4px;
@@ -149,6 +150,21 @@ img.right {
 .contact-form button[type=reset] {
 	background:#CCC;
 	text-shadow: 1px 1px 2px #666;
+}
+.contact-form .display {
+	padding:1em 1.5em;
+	margin:1em 0 1em 0;
+	border-radius:4px;
+	box-shadow:0px 0px 10px #CCC;
+}
+.success {
+	background:#ccffcc;
+	color:#336633;
+
+}
+.error {
+	background:#ffcccc;
+	color:#993333;
 }
 
 /* HERO */
