@@ -20,3 +20,11 @@
     clear: both;
     display: table;
 }
+@media screen and (max-width: 800px){
+
+    [class*="col-"]{
+        float:none;
+        width:100%;
+    }
+
+}
