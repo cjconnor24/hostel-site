@@ -22,31 +22,38 @@
          * CRUDE FUNTION TO CHANGE HERO HEADER IMAGE
          */
         function changeHeroImage(){
-            console.log('THIS RAN');
-            var heroBox = document.getElementsByClassName('hero')[0];
-            var imagePath = "/images/hostel/";
-            var heroImages=["bathroom.jpg",
-                "cafe.jpg",
-                "commonroom.jpg",
-                "cooking.jpg",
-                "dormitory.jpg",
-                "doubleroom1.jpg",
-                "doubleroon2.jpg",
-                "outside.jpg",
-                "singleroom.jpg",
-                "washing.jpg"];
+
+            try {
+                console.log('THIS RAN');
+                var heroBox = document.getElementsByClassName('hero')[0];
+                var imagePath = "/images/hostel/";
+                var heroImages = ["bathroom.jpg",
+                    "cafe.jpg",
+                    "commonroom.jpg",
+                    "cooking.jpg",
+                    "dormitory.jpg",
+                    "doubleroom1.jpg",
+                    "doubleroon2.jpg",
+                    "outside.jpg",
+                    "singleroom.jpg",
+                    "washing.jpg"];
 //            heroBox.backgroundImage = imagePath + heroImages[1];
-            console.log(imagePath + heroImages[5]);
-            heroBox.style.backgroundImage = 'url('+imagePath + heroImages[5]+')';
+                console.log(imagePath + heroImages[5]);
+                heroBox.style.backgroundImage = 'url(' + imagePath + heroImages[5] + ')';
+            } catch(err){
+                Console.log('REMEBER AND AMEND YOUR JS SLIDER STUFF');
+            }
         }
 
         function toggleNav() {
+
             var navbar = document.getElementsByTagName("nav")[0];
             if (navbar.className === "") {
                 navbar.className += " responsive";
             } else {
                 navbar.className = "";
             }
+
         }
     </script>
 
