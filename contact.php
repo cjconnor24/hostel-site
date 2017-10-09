@@ -62,6 +62,7 @@ TEMP // DEBUG
 
             <div class="col-6">
                 <h1>Find Us</h1>
+                <p>Another column - can put a google map or something like that here.</p>
             </div>
 
         </div>
