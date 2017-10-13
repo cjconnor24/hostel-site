@@ -74,12 +74,12 @@
             <div class="menu">
 
                 <ul>
-                    <li class="home"><a href="#">Home Page</a></li>
+                    <li class="home"><a href="./">Home Page</a></li>
                     <li><a href="facilities.html">Facilities</a> </li>
-                    <li><a href="#">Prices</a></li>
+                    <li><a href="prices.php">Prices</a></li>
                     <li><a href="#">Cafe</a></li>
                     <li><a href="#">Getting Here</a></li>
-                    <li><a href="#" class="contact">Contact Us</a></li>
+                    <li><a href="contact.php" class="contact">Contact Us</a></li>
                     <li class="menu-icon"><a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a></li>
                     <li class="telephone-icon"><a href="tel:+4412361234567"><i class="fa fa-phone"></i></a></li>
                 </ul>

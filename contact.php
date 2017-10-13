@@ -18,6 +18,23 @@ include('includes/header.php');
                     <?php
                     if(isset($_POST['submit'])){
 
+                        $fname = $_POST['first_name'];
+                        $lname = $_POST['last_name'];
+                        $email = $_POST['email'];
+                        $message = $_POST['message'];
+
+                        include('includes/dbConnect.php');
+                        $query = $conn->prepare("INSERT INTO contacts (first,last,email,message) values(?,?,?,?)");
+
+                        $query->bindParam(1,$fname);
+                        $query->bindParam(2,$lname);
+                        $query->bindParam(3,$email);
+                        $query->bindParam(4,$message);
+
+                        $query->execute();
+                        $conn = null;
+
+
                         ?>
                     <div class="display success">
 
@@ -35,8 +52,13 @@ TEMP // DEBUG
                     <form action="" method="post">
 
                         <div class="field">
-                        <label for="name">Your Name</label>
-                        <input type="text" name="full_name" value="" placeholder="Your Name" required>
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" value="" placeholder="First Name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" value="" placeholder="Last Name" required>
                         </div>
 
                         <div class="field">
@@ -63,6 +85,43 @@ TEMP // DEBUG
             <div class="col-6">
                 <h1>Find Us</h1>
                 <p>Another column - can put a google map or something like that here.</p>
+
+                <h2>Temp Message Outputs</h2>
+
+                <?php
+
+                include('includes/dbConnect.php');
+                $query=$conn->prepare("SELECT * FROM contacts;");
+                $query->execute();
+                $results = $query->fetchAll(PDO::FETCH_ASSOC);
+
+                ?>
+                <table class="contact-table">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                <?php
+
+                foreach($results as $row){
+                    echo "<tr>";
+
+                    echo "<td>".$row['first']." ".$row['last']."</td>";
+                    echo "<td>".$row['email']."</td>";
+                    echo "<td>".$row['message']."</td>";
+
+                    echo "</tr>";
+                }
+
+                ?>
+                    </tbody>
+                </table>
+
             </div>
 
         </div>

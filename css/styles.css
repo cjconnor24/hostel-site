@@ -415,6 +415,10 @@ footer p.copyright {
 	color:#FFF;
 }
 
+.contact-table {
+	width:100%;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width:1170px){
