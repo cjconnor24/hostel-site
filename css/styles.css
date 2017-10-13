@@ -351,6 +351,16 @@ nav ul li a.contact:hover {
 	float:left;
 }
 
+/* MAP */
+#location-map {
+	height:300px;
+	width:100%;
+	display:block;
+	-webkit-box-shadow:  0px 0px 24px rgb(32,32,32);
+	-moz-box-shadow:  0px 0px 24px rgb(32,32,32);
+	box-shadow:  0px 0px 24px rgb(32,32,32);
+}
+
 /* FOOTER */
 footer {
 	color:#fff;
