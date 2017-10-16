@@ -23,7 +23,7 @@
 
                     <ul>
                         <li class="header">Dormitory</li>
-                        <li class="price">£9.50 per night</li>
+                        <li class="price">£9.50 <em>per night</em></li>
                         <li>Perfect for Groups</li>
                         <li>Test Line</li>
                         <li>Another Feature</li>
@@ -36,7 +36,7 @@
 
                     <ul>
                         <li class="header highlight">Group Room</li>
-                        <li class="price">£11 per night</li>
+                        <li class="price">£11 <em>per night</em></li>
                         <li>Perfect for Groups</li>
                         <li>Test Line</li>
                         <li>Another Feature</li>
@@ -49,7 +49,7 @@
 
                     <ul>
                         <li class="header">Double Room</li>
-                        <li class="price">£25 per night</li>
+                        <li class="price">£25 <em>per night</em></li>
                         <li>Perfect for Groups</li>
                         <li>Test Line</li>
                         <li>Another Feature</li>
