@@ -316,7 +316,8 @@ nav ul li a {
 	-o-transition: color 0.2s;
 	transition: color 0.5s;
 }
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
 	color:#999;
 }
 nav ul li:last-child,
@@ -329,7 +330,8 @@ nav ul li a.contact {
 	background:rgba(100,0,0,0);
 	transition:background-color 0.3s ease;
 }
-nav ul li a.contact:hover {
+nav ul li a.contact:hover,
+nav ul li a.contact.active {
 	background:#999;
 	color:#FFF;
 }

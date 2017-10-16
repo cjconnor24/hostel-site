@@ -147,7 +147,7 @@
 
                         <?php
                         if(isset($_POST['submit'])){
-                            
+
                             ?>
                             <div class="display success">
 
@@ -207,7 +207,7 @@ TEMP // DEBUG
 
                             <div class="field">
                                 <label for="confirm">By submitting this information, I agree to Backpacker Hostel selling my soul to email spammers.</label>
-                                <input type="checkbox" name="confirm">
+                                <input type="checkbox" name="confirm" required>
                             </div>
 
                             <div class="field">

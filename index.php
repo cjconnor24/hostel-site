@@ -5,7 +5,7 @@
         <div class="background">
         <h1>WELCOME to the Backpacker Hostel</h1>
         <p>This is a sub-heading for more hero information</p>
-        <p><a href="#" class="btn">Find out more</a></p>
+        <p><a href="prices.php" class="btn">Find out more</a></p>
         </div>
     </section>
 
