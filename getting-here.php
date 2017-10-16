@@ -135,47 +135,139 @@
 
         <div class="wrapper">
 
-            <!--<div class="row">-->
+            <div class="row">
 
-                <!--<div class="col-4"><h2>TEST</h2>-->
-                <!--<p>Here is some body text</p></div>-->
+                <div class="col-6">
+                    <h1>Travel Survey</h1>
 
-                <!--<div class="col-8"><h2>COLUMN TWO</h2>-->
-                <!--<p>THIS IS ANOTHER COLOUMN</p>-->
-                <!--</div>-->
-
-            <!--</div>-->
+                    <p>To get in contact with us, simply fill in the form below</p>
 
 
+                    <div class="contact-form">
+
+                        <?php
+                        if(isset($_POST['submit'])){
+                            
+                            ?>
+                            <div class="display success">
+
+                                <h2>Thank You</h2>
+                                <p>Thanks for getting in contact with us, someone will be in touch with you shortly.</p>
+
+                                <pre>
+TEMP // DEBUG
+                                    <?php echo print_r($_POST);?>
+</pre>
+
+                            </div>
+                        <?php } ?>
+
+                        <form action="" method="post">
+
+                            <div class="field">
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" value="" placeholder="First Name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" value="" placeholder="Last Name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" value="" placeholder="Your Email Address" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="mode">How will you get here?</label>
+                                <select name="mode" id="mode">
+                                    <option value="" disabled selected>Please choose</option>
+                                    <option value="bus">Bus</option>
+                                    <option value="car">Car</option>
+                                    <option value="train">Train</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+
+                                <p>Will you require assistance?</p>
+                                <label for="assistance">Yes.</label>
+
+                                <input type="radio" name="assistance" class="radio" value="yes">
+                                <label for="assistance">No Thanks.</label>
+                                <input type="radio" name="assistance" class="radio" checked value="no">
+
+                            </div>
+
+                            <div class="field">
+                                <label for="additional">Additional Information</label>
+                                <textarea name="additional" id="additional" cols="30" rows="10" required></textarea>
+                            </div>
+
+                            <div class="field">
+                                <label for="confirm">By submitting this information, I agree to Backpacker Hostel selling my soul to email spammers.</label>
+                                <input type="checkbox" name="confirm">
+                            </div>
+
+                            <div class="field">
+                                <button type="submit" name="submit">Submit Survey</button>
+                                <button type="reset">Clear Form</button>
+                            </div>
 
 
-            <h1>HTML Ipsum Presents</h1>
 
-            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-            <h2>Header Level 2</h2>
+                        </form>
 
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ol>
+                    </div>
 
-            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+                </div>
 
-            <h3>Header Level 3</h3>
+<!--                <div class="col-6">-->
+<!--                    <h1>Find Us</h1>-->
+<!--                    <p>Another column - can put a google map or something like that here.</p>-->
+<!---->
+<!--                    <h2>Temp Message Outputs</h2>-->
+<!---->
+<!--                    --><?php
+//
+//                    include('includes/dbConnect.php');
+//                    $query=$conn->prepare("SELECT * FROM contacts;");
+//                    $query->execute();
+//                    $results = $query->fetchAll(PDO::FETCH_ASSOC);
+//
+//                    ?>
+<!--                    <table class="contact-table">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th>Name</th>-->
+<!--                            <th>Email</th>-->
+<!--                            <th>Message</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!---->
+<!--                        --><?php
+//
+//                        foreach($results as $row){
+//                            echo "<tr>";
+//
+//                            echo "<td>".$row['first']." ".$row['last']."</td>";
+//                            echo "<td>".$row['email']."</td>";
+//                            echo "<td>".$row['message']."</td>";
+//
+//                            echo "</tr>";
+//                        }
+//
+//                        ?>
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!---->
+<!--                </div>-->
 
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ul>
+            </div>
 
-            <pre><code>
-#header h1 a {
-display: block;
-width: 300px;
-height: 80px;
-}
-</code></pre>
 
         </div>
 

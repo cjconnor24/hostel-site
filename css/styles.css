@@ -124,7 +124,8 @@ img.right {
 	display:block;
 	width:100%;
 }
-.contact-form label {
+.contact-form label,
+.contact-form p {
 	font-size:0.8em;
 	color:rgb(32,32,32);
 }
@@ -132,6 +133,59 @@ img.right {
 .contact-form textarea:focus {
 	border:1px solid rgb(32,32,32);
 	box-shadow: 0px 0px 0px rgb(32,32,32);
+}
+.contact-form select {
+	border:1px solid #CCC;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	height: 35px;
+	padding: 5px; /* If you add too much padding here, the options won't show in IE */
+	width: 100%;
+	display:block;
+}
+
+.contact-form .radio {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 2px solid #CCC;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+	padding: 16px;
+}
+
+.contact-form .radio:checked:after {
+	content: ' ';
+	border-radius: 50px;
+	position: absolute;
+	background: rgb(32,32,32);
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	text-shadow: 0px;
+	font-size: 32px;
+	width: 24px;
+	height: 24px;
+	left: 4px;
+	top: 4px;
+}
+
+.contact-form .radio:checked {
+	color: #99a1a7;
+	border: 2px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form .radio:active, .radio:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+/*.contact-form input[type=radio] {*/
+	/*margin:0 1em;*/
+	/*border:5px solid rgb(32,32,32);*/
+/*}*/
+.contact-form input[type=checkbox] {
+	border:2px solid rgb(32,32,32);
 }
 
 .contact-form button {
