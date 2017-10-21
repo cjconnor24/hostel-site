@@ -135,15 +135,19 @@
 
         <div class="wrapper">
 
+            <h1>Travel Survey</h1>
+
+            <p>To get in contact with us, simply fill in the form below</p>
+
             <div class="row">
 
+                <div class="contact-form">
+
                 <div class="col-6">
-                    <h1>Travel Survey</h1>
-
-                    <p>To get in contact with us, simply fill in the form below</p>
 
 
-                    <div class="contact-form">
+
+
 
                         <?php
                         if(isset($_POST['submit'])){
@@ -188,6 +192,11 @@ TEMP // DEBUG
                                     <option value="train">Train</option>
                                 </select>
                             </div>
+
+                </div>
+                            <div class="col-6">
+
+
 
                             <div class="field">
 

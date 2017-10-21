@@ -353,6 +353,11 @@ nav ul li a.contact.active {
 	display:block;
 	float:left;
 	/*border:1px solid rgb(32,32,32);*/
+	box-shadow:0px 0px 10px #eee;
+	transition:0.2s ease;
+}
+.price-col:hover {
+	box-shadow:0px 0px 20px #999;
 }
 .price-col ul {
 	list-style:none;
@@ -367,7 +372,7 @@ nav ul li a.contact.active {
 	background:#eee;
 }
 .highlight {
-	background: #00992b !important;
+	background: rgb(0,165,100) !important;
 }
 .price-col ul li.header {
 	background:rgb(32,32,32);
@@ -375,6 +380,7 @@ nav ul li a.contact.active {
 	font-family:Nunito, sans-serif;
 	font-size:1.3em;
 	text-transform: uppercase;
+	text-shadow: 1px 1px 5px #333;
 }
 .price-col ul li.footer a {
 	text-decoration:none;
