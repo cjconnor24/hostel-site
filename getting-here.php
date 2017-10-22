@@ -152,6 +152,29 @@
                         <?php
                         if(isset($_POST['submit'])){
 
+                            $fname = $_POST['first_name'];
+                            $lname = $_POST['last_name'];
+                            $email = $_POST['email'];
+                            $mode = $_POST['mode'];
+                            $assistance = ($_POST['assistance']=="yes" ? 1 : 0);
+                            $additional = $_POST['additional'];
+
+//                            echo $assistance;
+
+                            include('includes/dbConnect.php');
+                            $query = $conn->prepare("INSERT INTO survey (first,last,email,mode,assistance,additional) values(?,?,?,?,?,?)");
+
+                            $query->bindParam(1,$fname);
+                            $query->bindParam(2,$lname);
+                            $query->bindParam(3,$email);
+                            $query->bindParam(4,$mode);
+                            $query->bindParam(5,$assistance);
+                            $query->bindParam(6,$additional);
+
+
+                            $query->execute();
+                            $conn = null;
+
                             ?>
                             <div class="display success">
 

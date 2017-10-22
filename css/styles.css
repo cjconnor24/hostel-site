@@ -491,6 +491,21 @@ footer p.copyright {
 	width:100%;
 }
 
+/* MISC SITE STYLING */
+.survey-results {
+	width:100%;
+}
+.survey-results canvas {
+
+}
+.survey-results tr td:nth-child(2){
+	/*background:#F00;*/
+	border-left:1px solid rgb(32,32,32);
+}
+.survey-results tr:nth-child(3) td:nth-child(2){
+	border-bottom:1px solid rgb(32,32,32);
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width:1170px){
