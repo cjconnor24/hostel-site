@@ -505,7 +505,33 @@ footer p.copyright {
 .survey-results tr:nth-child(3) td:nth-child(2){
 	border-bottom:1px solid rgb(32,32,32);
 }
-
+table.assistance-table {
+	padding-top:1em;
+	width:100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+table.assistance-table th {
+	background:rgb(32,32,32);
+	color:#FFF;
+}
+.assistance-table td, .assistance-table th {
+	padding:1em 0 1em 0.5em;
+}
+.assistance-table tr {
+	transition:0.2s;
+}
+.assistance-table tr:hover {
+	background:#CCC!important;
+}
+.assistance-table tr:nth-child(even){
+	background:#eee;
+}
+p a.survey-export {
+	text-decoration:none;
+	color:rgb(32,32,32);
+	padding:1em 0;
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width:1170px){
