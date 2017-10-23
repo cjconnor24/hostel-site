@@ -155,24 +155,6 @@
             </table>
 
             <script type="text/javascript">
-                //                var data = {
-                //                    "summary": [{
-                //                        "name": "first",
-                //                        "hits": 5
-                //                    }, {
-                //                        "name": "second",
-                //                        "hits": 7
-                //                    }, {
-                //                        "name": "third",
-                //                        "hits": 2
-                //                    }, {
-                //                        "name": "fourth",
-                //                        "hits": 13
-                //                    }, {
-                //                        "name": "fifth",
-                //                        "hits": 3
-                //                    }]
-                //                };
                 var element;
                 var data = {"survey": <?php echo $results;?> };
 
@@ -195,7 +177,9 @@
 
 //                    CELL
                     var subnode1 = document.createElement("td");
-                    var textnode1 = document.createTextNode(names.toUpperCase());
+//                    var textnode1 = document.createTextNode('fa-'+names.toLowerCase());
+                    var textnode1 = document.createElement("span");
+                    textnode1.setAttribute('class','fa fa-'+names.toLowerCase());
 
 
 //                    CELL
