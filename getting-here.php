@@ -8,6 +8,10 @@
 <!--        <p><a href="#" class="btn">Find out more</a></p>-->
 <!--        </div>-->
 <!--    </section>-->
+
+<!--TEMP FOR DEBUG-->
+<a style="position:absolute;left:5px;top:5px;color:#eee;font-size:x-small;text-decoration:none;" href="survey-results.php">Results</a>
+
 <section id="location-map"></section>
 
 <script>

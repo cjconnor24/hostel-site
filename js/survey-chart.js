@@ -47,7 +47,6 @@ for (element in data.survey) {
     }
     bar.rect(0, 0, length*100, 100);
     bar.fill();
-
     bar.fillStyle = "#FFFFFF";
     bar.font = "30px Arial";
     bar.fillText(values,10,50);

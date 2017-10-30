@@ -527,10 +527,11 @@ table.assistance-table th {
 .assistance-table tr:nth-child(even){
 	background:#eee;
 }
-p a.survey-export {
+.survey-export {
 	text-decoration:none;
 	color:rgb(32,32,32);
-	padding:1em 0;
+	display:block;
+	margin:1em 0 1em 0;
 }
 /* MEDIA QUERIES */
 

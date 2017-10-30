@@ -16,7 +16,7 @@
                     height: 400px;
                     width: 200px;
                     margin: 2px;
-                    background-color: #dedede;
+                    background-color: #F00;
                     float: left;
                 }
                 .dragable::after {
@@ -31,11 +31,11 @@
                 }
 
                 .pink {
-                    background-color: #FFCCFF;
+                    background-color: magenta;
                 }
 
                 .blue {
-                    background-color: #CCFFFF;
+                    background-color: blue;
                 }
             </style>
 

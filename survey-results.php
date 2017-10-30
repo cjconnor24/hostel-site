@@ -86,7 +86,7 @@
             </tbody>
             </table>
 
-            <p><a href="javascript:alert('doesnot do anything');" class="survey-export"><span class="fa fa-download"></span>Export List</a></p>
+            <a href="javascript:alert('doesnot do anything');" title="Download Assistance List" class="survey-export"><span class="fa fa-download"></span> Export List</a>
 
                 </div>
             </div>
