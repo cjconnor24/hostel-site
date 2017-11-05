@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
 @import url('/css/util.css');
+@import url('/css/lightbox.css');
 @charset "utf-8";
 
 /*
@@ -65,8 +66,20 @@ p, blockquote, blockquote p {
 	height:auto;
 	overflow: hidden;
 	transition: 0.25s;
+	position:relative;
 }
 
+/*.gallery div:hover::after {*/
+	/*content:'after';*/
+	/*position:absolute;*/
+	/*top:0px;*/
+	/*left:0px;*/
+	/*display:block;*/
+	/*width:100%;*/
+	/*height:100%;*/
+	/*opacity: 0.5;*/
+	/*background:#F00;*/
+/*}*/
 .gallery div img {
 	width:100%;
 }
