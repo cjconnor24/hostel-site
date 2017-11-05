@@ -1,6 +1,17 @@
 
 <?php include('includes/header.php');?>
 
+<div id="lightbox">
+
+
+    <div id="overlay"><h1>Test</h1></div>
+
+
+
+
+
+</div>
+
     <section class="hero view">
         <div class="background">
         <h1>WELCOME to the Backpacker Hostel</h1>

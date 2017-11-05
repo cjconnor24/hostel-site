@@ -1,25 +1,33 @@
 <div class="gallery">
 
+    <?php
+
+    $galleryimgs = array("/images/food/bakedpotato.jpg",
+        "/images/food/cake1.jpg",
+        "/images/food/hotchocolate.jpg",
+        "/images/food/lasagna.jpg",
+        "/images/food/tea.jpg",
+        "/images/food/breakfast.jpg",
+        "/images/food/cake2.jpg",
+        "/images/food/icecream.jpg",
+        "/images/hostel/bathroom.jpg",
+        "/images/hostel/cafe.jpg",
+        "/images/hostel/commonroom.jpg",
+        "/images/hostel/cooking.jpg",
+        "/images/hostel/dormitory.jpg",
+        "/images/hostel/doubleroom1.jpg",
+        "/images/hostel/doubleroon2.jpg",
+        "/images/hostel/outside.jpg",
+        "/images/hostel/singleroom.jpg",
+        "/images/hostel/washing.jpg");
+
+    foreach($galleryimgs as $img){
+        echo "<div><a href='#'><img src=\"$img\" alt=\"Baked Potato\" /></a></div>";
+    }
+
+    ?>
 
 
-    <div><img src="/images/food/bakedpotato.jpg" alt="Baked Potato" /></div>
-    <div><img src="/images/food/cake1.jpg" alt="Cake" /></div>
-    <div><img src="/images/food/hotchocolate.jpg" alt="Hot Chocolate" /></div>
-    <div><img src="/images/food/lasagna.jpg" alt="Lasagne" /></div>
-    <div><img src="/images/food/tea.jpg" alt="Tea" /></div>
-    <div><img src="/images/food/breakfast.jpg" alt="Breakfast" /></div>
-    <div><img src="/images/food/cake2.jpg" alt="Cake" /></div>
-    <div><img src="/images/food/icecream.jpg" alt="Ice Cream" /></div>
 
-    <div><img src="/images/hostel/bathroom.jpg" alt="" /></div>
-    <div><img src="/images/hostel/cafe.jpg" alt="" /></div>
-    <div><img src="/images/hostel/commonroom.jpg" alt="" /></div>
-    <div><img src="/images/hostel/cooking.jpg" alt="" /></div>
-    <div><img src="/images/hostel/dormitory.jpg" alt="" /></div>
-    <div><img src="/images/hostel/doubleroom1.jpg" alt="" /></div>
-    <div><img src="/images/hostel/doubleroon2.jpg" alt="" /></div>
-    <div><img src="/images/hostel/outside.jpg" alt="" /></div>
-    <div><img src="/images/hostel/singleroom.jpg" alt="" /></div>
-    <div><img src="/images/hostel/washing.jpg" alt="" /></div>
 
 </div>
